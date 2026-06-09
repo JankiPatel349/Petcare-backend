@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Pet</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <img src="/images/pet-logo.png" alt="Pet Logo" class="header-logo">
+    <span class="site-title">Pet Care Organizer</span>
+</header>
+
+<button class="top-right-button" onclick="window.location.href='/account-info'">
+    <ion-icon name="person-outline"></ion-icon>
+</button>
+
+<section class="page-container">
+    <form action="/pets/add" method="post" class="left-form">
+        <h1>Add a New Pet</h1>
+
+        <div class="inputbox">
+            <label>Pet Name:</label>
+            <input type="text" name="petName" required>
+        </div>
+
+        <div class="inputbox">
+            <label>Pet Type:</label>
+            <input type="text" name="petType" required>
+        </div>
+
+        <div class="inputbox">
+            <label>Birth Year:</label>
+            <input type="number" name="birthYear" required>
+        </div>
+
+        <div class="inputbox">
+            <label>Birth Month:</label>
+            <input type="number" name="birthMonth" required>
+        </div>
+
+        <button type="submit">Add Pet</button>
+        <a href="/pets" class="btn">Back to Pets</a>
+    </form>
+</section>
+
+<footer class="site-footer">
+    Group 3 CSC 478 B
+</footer>
+
+</body>
+</html>
